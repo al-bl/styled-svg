@@ -1,6 +1,6 @@
 import React from 'react'
 import TestRenderer from 'react-test-renderer'
-import Image from './Logo.js'
+import Image from './Warning.ts'
 
 const sizes = {
   small: { width: 18, height: 18 },
@@ -9,14 +9,14 @@ const sizes = {
   extralarge: { width: 48, height: 48 }
 }
 
-describe('Logo.svg generated styled component', () => {
+describe('Warning.svg generated styled component', () => {
   let renderer
   beforeEach(() => {
     renderer = TestRenderer.create(<Image />)
   })
 
   it('sets the correct display name', () => {
-    expect(Image.displayName).toEqual('Logo')
+    expect(Image.displayName).toEqual('Warning')
   })
   it('renders a <svg> tag without crashing', () => {
     expect(renderer.root.findAllByType('svg').length).toBe(1)

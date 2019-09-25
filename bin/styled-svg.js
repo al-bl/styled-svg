@@ -59,6 +59,11 @@ const optionsDefinitions = [
     alias: 'h',
     type: Boolean,
     description: 'Displays this usage guide.'
+  },
+  {
+    name: 'ts',
+    description: 'Generate in ts files.',
+    type: Boolean
   }
 ]
 

@@ -12,7 +12,7 @@
     "develop": "CI=1 nodemon -x 'npm run test' --ignore 'test-images/*.js'",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "build": "node bin/styled-svg.js src/**/*.svg --size=small:18x18 --size=medium:24x24 --size=large:36x36",
+    "build": "node bin/styled-svg.js src/**/*.svg --size=small:18x18 --size=medium:24x24 --size=large:36x36 --ts --output-dir=src/output",
     "test": "npm run build && node jest/test.js",
     "test:coverage": "npm run build && node jest/test.js --coverage"
   },

@@ -1,6 +1,6 @@
 import React from 'react'
 import TestRenderer from 'react-test-renderer'
-import Image from './CheckedFocused.js'
+import Image from './CheckedFocused.ts'
 
 const sizes = {
   small: { width: 18, height: 18 },
